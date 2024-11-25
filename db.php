@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root"; // Adjust based on your setup
-$password = "";
+$username = "mae"; // Adjust based on your setup
+$password = "almonia";
 $database = "mae";
 
 try {
