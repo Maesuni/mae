@@ -1,0 +1,193 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, lavenderblush, lavender, thistle);
+    color: #4b0082; /* Indigo tone for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in animation for smooth entry */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4b0082;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* Common Button Styles */
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Edit Button Styling */
+.edit-btn {
+    background: linear-gradient(135deg, #6a5acd, #4b0082); /* Lavender to Indigo gradient */
+}
+
+.edit-btn:hover {
+    background: linear-gradient(135deg, #4b0082, #6a5acd);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Delete Button Styling */
+.delete-btn {
+    background: linear-gradient(135deg, #ff6961, #c91e1e); /* Soft red to crimson gradient */
+}
+
+.delete-btn:hover {
+    background: linear-gradient(135deg, #c91e1e, #ff6961);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    color: #fff; /* Ensures text contrast remains high */
+}
+
+
+button {
+    background: linear-gradient(135deg, #6a5acd, #4b0082);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #4b0082, #6a5acd);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+a {
+    color: #6a5acd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4b0082;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: lavender;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #4b0082;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table td {
+    color: #4b0082;
+}
+
+table tr:hover {
+    background: rgba(75, 0, 130, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #4b0082;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid lavender;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    border-color: #4b0082;
+    outline: none;
+    box-shadow: 0px 4px 8px rgba(75, 0, 130, 0.2);
+}
+
+form button {
+    align-self: flex-start;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    table th,
+    table td {
+        font-size: 0.9rem;
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+
+}
